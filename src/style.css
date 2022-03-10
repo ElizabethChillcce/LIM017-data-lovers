@@ -1,10 +1,64 @@
 .headerSentence {
-    background-color: red;
+    background-color: rgb(252, 45, 45);
     text-align: center;
     font-family: cursive;
+    font-weight: bold;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+/*.pet {
+    background-repeat: no-repeat;
+    height: 5px;
+    width: 5px;
+    margin-right: 0px;
+
+}*/
+.titleImage {
+    background-image: url(../images/title.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   
 }
 .titleOne {
     text-align: center;
     text-decoration: underline;
-
+    color: blue;
+    
+}
+body {
+    background-image: url(../images/fondo.png);
+}
+.imageLogo img {
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blockQuestion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.questions {
+    font-size: 16px;
+    text-align: center;
+}
+.btn {
+    margin-top: 15px;
+    font-size: 14px;
+    background-color: red;
+}
+.resume {
+   margin-top: 10%;
+   display: none;
+}
+.champions {
+    text-align: center;
+       
 }
