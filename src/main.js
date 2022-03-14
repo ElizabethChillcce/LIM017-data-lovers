@@ -1,10 +1,7 @@
-import { example,  } from './data.js';
-import athletes from './data/athletes/athletes.js';
-// import data from './data/lol/lol.js';
-console.log(athletes[0]);
+import {sortData} from './data.js';
 import data from './data/athletes/athletes.js';
+// import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
-//console.log(athletes, data);
 
 function mostrarPagina() {
     document.getElementById("homePage").style.display="none";
@@ -14,11 +11,20 @@ function mostrarPagina() {
 let buttonUno= document.getElementById("btnQuestions");
 buttonUno.addEventListener("click",mostrarPagina);
 
-let arrayPlay = data. athletes;
-let array = [];
-for (let i=0; i<arrayPlay.length; i++) {
+const champions = document.getElementById("champions")
+//let arrayPlay = data.athletes;
+//for (let i=0; i<arrayPlay.length; i++) {
     
-    array.push( arrayPlay[i]. name);
-     
- }
- console.log(array);
+ // let newDiv = document.createElement("div");
+  //  let newContent = document.createTextNode(arrayPlay[i].name);
+  //  newDiv.appendChild(newContent);
+  //  champions.appendChild(newDiv); 
+// }
+//console.log(filterData(data.athletes));
+
+let arrayPlay = data.athletes;
+
+
+
+
+
