@@ -1,20 +1,10 @@
-.headerSentence {
-    width: 100%;
-    height: 50%;
-}
-.information{
+
+.information {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
 }
-/*.pet {
-    background-repeat: no-repeat;
-    height: 5px;
-    width: 5px;
-    margin-right: 0px;
-
-}*/
 .titleImage {
     background-image: url(../images/title.png);
     background-repeat: no-repeat;
@@ -28,14 +18,14 @@
     
 }
 
-.imageLogo img {
+/*.imageLogo img {
     background-repeat: no-repeat;
     height: 300px;
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}*/
 .blockQuestion{
     display: flex;
     flex-direction: column;
