@@ -1,31 +1,3 @@
-
-.information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.titleImage {
-    background-image: url(../images/title.png);
-    background-repeat: no-repeat;
-    background-position: right;
-   
-}
-.titleOne {
-    text-align: center;
-    text-decoration: underline;
-    color: blue;
-    
-}
-
-/*.imageLogo img {
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
 .blockQuestion{
     display: flex;
     flex-direction: column;
@@ -43,5 +15,79 @@
 
 .champions {
     text-align: center;
-       
+
 }
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+.sec{
+  position: relative;
+  width:  100%;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.uno{
+  background:url(./Images/Rionado.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.sesgouno{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    /* background: #000;
+    height: 60px;
+    width: 100%; */
+    border-width: 15vh 0 0 100vw; /*vemos las manecillas en el cual arriba tenemos el 15% del height
+    a la derecha el 100% del width, quitamos la parte de arriba, la mitad de un rectangulo en diagonal*/
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+  
+  }
+  
+  .tres{
+    background: url(./Images/Runner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .sesgodos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width:  15vh 100vw 0 0 ;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent ;
+  }
+  .logo{
+    height: 80px;
+    padding: 10;
+    margin: 10;
+  
+  }
+  .texto{
+    text-align: center;
+    color: #000;
+    margin: 150px 0;
+  }
+  h1{
+    font-size: 80px;
+  }
+  .texto p{
+    font-size: 40px;
+    font-weight: 300;
+  }
+  

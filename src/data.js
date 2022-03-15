@@ -1,9 +1,9 @@
 // estas funciones son de ejemplo
 
-export function filterData(data, condition) {
+export function filterData(data, sport) {
   // console.log(data.filter(arrayPlay));
  return data.filter((ath) => {
-    if (ath.age>= 30 && ath.age < 40) {
+    if (ath.sport === sport) {
       return true;
     }
     return false;
@@ -11,6 +11,7 @@ export function filterData(data, condition) {
  
   
 };
+// if (ath.age>= 20 && ath.age <29)
 
 export function sortData(data) {
   for (let i=0; i<arrayPlay.length -1; i++) {
