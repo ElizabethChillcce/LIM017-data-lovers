@@ -8,8 +8,8 @@ function mostrarPagina() {
     document.getElementById("answer").style.display="block";
 }
 
-// let buttonUno= document.getElementById("btnQuestions");
-// buttonUno.addEventListener("click",mostrarPagina);
+//let buttonUno= document.getElementById("btnQuestion");
+ //buttonUno.addEventListener("click",mostrarPagina);
 
 const champions = document.getElementById("champions")
 const selectSports = document.getElementById("selectSport")
