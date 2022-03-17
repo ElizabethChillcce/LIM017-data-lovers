@@ -10,7 +10,7 @@
 
   <body>
    
-    <id id="homePage">
+    <div id="homePage">
 
     <header class="sec uno">
      
@@ -26,7 +26,7 @@
          <div class="texto">
             <h1>HOLA</h1>
             <p>hola</p>
-       </div>
+         </div>
        
        <select id="selectSport">
         <option value="Archery">Archery</option>
@@ -62,18 +62,29 @@
         <option value="Wrestling">Wrestling</option>
         <option value="Weightlifting">Weightlifting</option>
       </select>
-     
+      <button id="buttonOlympics">Descùbrelo</button>
     </section>
     <section class="sec tres">
         <div class="sesgodos">
         </div>
     </section>
     </div>
-    <section id="answer" style="display: none;">
-     <div id="champions">
+    <section id="answer" style="display: none;" class="secondPage">
+     <!---- <div id="champions">
+      </div>-->
+     <header type="checkbox" id="btn-menu" class="secondHeader">
+       <label for="btn-menu"><img src="images/" alt="">
 
-     </div>
-
+       </label>
+         <nav class="menu">
+           <ul>
+             <li><a href="">Atletas por deportes</a></li>
+             <li><a href="">Paises medallistas</a></li>
+             <li><a href="">cantidad de mujeres atletas</a></li>
+           </ul>
+         </nav>
+        </header>
+       
     </section>
     
     <script src="main.js" type="module"></script>

@@ -1,23 +1,3 @@
-.blockQuestion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.questions {
-    font-size: 16px;
-    text-align: center;
-}
-.btn {
-    margin-top: 15px;
-    font-size: 14px;
-    background-color: red;
-}
-
-.champions {
-    text-align: center;
-
-}
-
 *{
   margin:0;
   padding: 0;
@@ -90,4 +70,65 @@ body{
     font-size: 40px;
     font-weight: 300;
   }
-  
+
+  .secondPage {
+    margin: 0;
+    font-family: sans-serif;
+  }
+ .secondHeader {
+    width: 100%;
+    background: #4E94AB;
+ }
+/*#btn-menu {
+   display:none;
+ }*/
+ .secondHeader label {
+    display: none;
+    width: 30px;
+    border-right: 1px solid #fff;
+    height: 30px;
+    padding: 10px;
+ }
+ .secondHeader label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+ }
+ .menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+ }
+ .menu li {
+    border-right: 1px solid #fff;
+ }
+ .menu li:hover {
+    background: rgba(0, 0, 0, 0.3);
+ }
+ .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+ }
+ @media (max-width:768px) {
+     .secondHeader label{
+       display: block;
+     }
+     .menu {
+       position: absolute;
+       background: #4E94AB;
+       width: 70%;
+       margin-left: -70;
+       transition: all 0.5s;
+     }
+     .menu ul {
+       flex-direction: column;
+     }
+     .menu li{
+       border-top: 1px solid #fff;
+     }
+     #btn-menu:checked ~ .menu {
+       margin: 0;
+     }
+ }
