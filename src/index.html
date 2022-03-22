@@ -28,40 +28,7 @@
             <p>hola</p>
          </div>
        
-       <select id="selectSport">
-        <option value="Archery">Archery</option>
-        <option value="Athletics">Athletics</option>
-        <option value="Badminton">Badminton</option>
-        <option value="Basketball">Basketball</option>
-        <option value="Beach Volleyball">Beach Volleyball</option>
-        <option value="Boxing">Boxing</option>
-        <option value="Canoeing">Canoeing</option>
-        <option value="Cycling">Cycling</option>
-        <option value="Diving">Diving</option>
-        <option value="Equestrianism">Equestrianism</option>
-        <option value="Handball">Handball</option>
-        <option value="Hockey">Hockey</option>
-        <option value="Gymnastics">Gymnastics</option>
-        <option value="Judo">Judo</option>
-        <option value="Fencing">Fencing</option>
-        <option value="Modern Pentathlon">Modern Pentathlon</option>
-        <option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
-        <option value="Rowing">Rowing</option>
-        <option value="Rugby Sevens">Rugby Sevens</option>
-        <option value="Sailing">Sailing</option>
-        <option value="Shooting">Shooting</option>
-        <option value="Synchronized Swimming">Synchronized Swimming</option>
-        <option value="Swimming">Swimming</option>
-        <option value="Table Tennis">Table Tennis</option>
-        <option value="Taekwondo">Taekwondo</option>
-        <option value="Tennis">Tennis</option>
-        <option value="Trampolining">Trampolining</option>
-        <option value="Triathlon">Triathlon</option>
-        <option value="Volleyball">Volleyball</option>
-        <option value="Water Polo">Water Polo</option>
-        <option value="Wrestling">Wrestling</option>
-        <option value="Weightlifting">Weightlifting</option>
-      </select>
+      
       <button id="buttonOlympics">Descùbrelo</button>
     </section>
     <section class="sec tres">
@@ -70,10 +37,13 @@
     </section>
     </div>
     <section id="answer" style="display: none;" class="secondPage">
-     <!---- <div id="champions">
-      </div>-->
+
+      <div id="champions">
+      </div>
+
+      
      <header type="checkbox" id="btn-menu" class="secondHeader">
-       <label for="btn-menu"><img src="images/" alt="">
+       <label for="btn-menu"><img src="./Images/icono-menu.png" alt="">
 
        </label>
          <nav class="menu">
@@ -85,8 +55,59 @@
          </nav>
         </header>
        
-    </section>
+        <select id="selectSport">
+          <option value="Archery">Archery</option>
+          <option value="Athletics">Athletics</option>
+          <option value="Badminton">Badminton</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Beach Volleyball">Beach Volleyball</option>
+          <option value="Boxing">Boxing</option>
+          <option value="Canoeing">Canoeing</option>
+          <option value="Cycling">Cycling</option>
+          <option value="Diving">Diving</option>
+          <option value="Equestrianism">Equestrianism</option>
+          <option value="Handball">Handball</option>
+          <option value="Hockey">Hockey</option>
+          <option value="Gymnastics">Gymnastics</option>
+          <option value="Judo">Judo</option>
+          <option value="Fencing">Fencing</option>
+          <option value="Modern Pentathlon">Modern Pentathlon</option>
+          <option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
+          <option value="Rowing">Rowing</option>
+          <option value="Rugby Sevens">Rugby Sevens</option>
+          <option value="Sailing">Sailing</option>
+          <option value="Shooting">Shooting</option>
+          <option value="Synchronized Swimming">Synchronized Swimming</option>
+          <option value="Swimming">Swimming</option>
+          <option value="Table Tennis">Table Tennis</option>
+          <option value="Taekwondo">Taekwondo</option>
+          <option value="Tennis">Tennis</option>
+          <option value="Trampolining">Trampolining</option>
+          <option value="Triathlon">Triathlon</option>
+          <option value="Volleyball">Volleyball</option>
+          <option value="Water Polo">Water Polo</option>
+          <option value="Wrestling">Wrestling</option>
+          <option value="Weightlifting">Weightlifting</option>
+        </select>
+        
     
+     <div>
+       <table id="athletesBySport">
+         <thead>
+           <tr class ="table">
+             <td>Nombre</td>
+             <td>Pais</td>
+             <td>Edad</td>
+             <td>Medallas</td>
+           </tr>
+         </thead>
+         <tbody id="Datos"></tbody>
+       </table>      
+     </div>
+
+
+    </section>
+
     <script src="main.js" type="module"></script>
 
   </body>
