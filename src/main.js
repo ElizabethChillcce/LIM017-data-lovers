@@ -1,9 +1,10 @@
-import {filterData} from './data.js';
+/* eslint-disable no-console */
+import {filterData, sortData} from './data.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 // console.log(filterData(data.athletes, "condition"));
-const arrayPlay = filterData(data.athletes);
+//const arrayPlay= filterData(data.athletes); esto es muy importante
 
 function mostrarPagina() {
     document.getElementById("homePage").style.display="none";
@@ -15,27 +16,54 @@ let buttonUno= document.getElementById("buttonOlympics");
 
 const Datos = document.getElementById("Datos")
 
-const selectSports = document.getElementById("selectSport")
+const selectSport = document.getElementById("selectSport")
 selectSport.addEventListener('change', (e) => {
 //console.log(filterData(data.athletes, e.target.value ))
   const resultSport = filterData (data.athletes, e.target.value )
-  const tableBody = document.getElementById("Datos")
+  //const tableBody = document.getElementById("Datos") // esto lo voy a usar p la primera historia
+
   let htmlrow ="";
   for (let i=0; i<resultSport.length; i++){
-
- htmlrow +=
- `
+ htmlrow +=`
+ <th>Nombre</th>
+  <th>Pais</th>
+  <th>Edad</th>
+  <th>Medalla</th>
   <tr>
     <td>${resultSport[i].name}</td>
     <td>${resultSport[i].team}</td>
     <td>${resultSport[i].age}</td>
     <td>${resultSport[i].medal}</td>
     </tr>
+
    `; 
   console.log(htmlrow);
 }
 Datos.innerHTML = htmlrow;
 })
+
+let teamWord = document.getElementById('teamWord');
+teamWord.addEventListener('click', ()=> {
+  console.log(sortData(data.athletes));
+  })
+//otra forma de en vez de usar el for clàsico usar el forEach
+/*resultSport.forEach( sport => {
+  htmlrow +=`
+  <th>Nombre</th>
+   <th>Pais</th>
+   <th>Edad</th>
+   <th>Medalla</th>
+  <tr>
+  <td>${sport.name}</td>
+  <td>${sport.team}</td>
+  <td>${sport.age}</td>
+  <td>${sport.medal}</td>
+  </tr>
+ `;
+});
+Datos.innerHTML = htmlrow;
+})*/
+
 //let tableSport = (mostrar) => {
 /* Datos.innerHTML = ``;
  mostrar.forEach ((z)=> {

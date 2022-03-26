@@ -136,3 +136,19 @@ body{
    display: flex;
    display: inline-block;
  }
+ .secondBck{
+  background-image:url(./Images/Volleyball.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.fondTable{
+  position: center;
+  margin: 0 auto;
+}
