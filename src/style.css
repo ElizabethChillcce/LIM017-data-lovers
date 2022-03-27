@@ -2,7 +2,6 @@
   margin:0;
   padding: 0;
 }
-
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
@@ -12,7 +11,6 @@ body{
   width:  100%;
   height: 100vh;
   overflow: hidden;
-
 }
 .uno{
   background:url(./Images/Rionado.jpg);
@@ -20,123 +18,119 @@ body{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 .sesgouno{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    /* background: #000;
-    height: 60px;
-    width: 100%; */
-    border-width: 15vh 0 0 100vw; /*vemos las manecillas en el cual arriba tenemos el 15% del height
-    a la derecha el 100% del width, quitamos la parte de arriba, la mitad de un rectangulo en diagonal*/
-    border-style: solid;
-    border-color: transparent transparent transparent #fff;
-  
-  }
-  
-  .tres{
-    background: url(./Images/Runner.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .sesgodos{
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-width:  15vh 100vw 0 0 ;
-    border-style: solid;
-    border-color: #fff transparent transparent transparent ;
-  }
-  .logo{
-    height: 80px;
-    padding: 10;
-    margin: 10;
-  
-  }
-  .texto{
-    text-align: center;
-    color: #000;
-    margin: 150px 0;
-  }
-  h1{
-    font-size: 80px;
-  }
-  .texto p{
-    font-size: 40px;
-    font-weight: 300;
-  }
-
-  .secondPage {
-    margin: 0;
-    font-family: sans-serif;
-  }
- .secondHeader {
-    width: 100%;
-    background: #4E94AB;
- }
-/*#btn-menu {
-   display:none;
- }*/
- .secondHeader label {
-    display: none;
-    width: 30px;
-    border-right: 1px solid #fff;
-    height: 30px;
-    padding: 10px;
- }
- .secondHeader label:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
- }
- .menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
- }
- .menu li {
-    border-right: 1px solid #fff;
- }
- .menu li:hover {
-    background: rgba(0, 0, 0, 0.3);
- }
- .menu li a {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  /* background: #000;
+  height: 60px;
+  width: 100%; */
+  border-width: 15vh 0 0 100vw; /*vemos las manecillas en el cual arriba tenemos el 15% del height
+  a la derecha el 100% del width, quitamos la parte de arriba, la mitad de un rectangulo en diagonal*/
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+.tres{
+  background: url(./Images/Runner.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sesgodos{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width:  15vh 100vw 0 0 ;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent ;
+}
+.logo{
+  height: 80px;
+  padding: 10;
+  margin: 10;
+}
+.texto{
+  text-align: center;
+  color: #000;
+  margin: 150px 0;
+}
+h1{
+  font-size: 80px;
+}
+.texto p{
+  font-size: 40px;
+  font-weight: 300;
+}
+/*segunda pagina*/
+.secondPage{
+  margin: 0;
+  font-family: sans-serif;
+  min-width: 100%;
+}
+.secondHeader{
+  width: 100%;
+  background: #4E94AB;
+}
+/*btn-menu{
+  display: none;
+}*/
+.secondHeader label{
+  display: none;
+  width: 30px;
+  border-right: 1px solid #fff;
+  height: 30px;
+  padding: 10px;
+}
+.secondHeader label:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.menu li{
+  border-right: 1px solidv#fff;
+}
+.menu li:hover{
+  background:  rgba(0, 0, 0, 0.3);
+}
+.menu li a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width:768px){
+  .secondHeader label{
     display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
- }
- @media (max-width:768px) {
-     .secondHeader label{
-       display: block;
-     }
-     .menu {
-       position: absolute;
-       background: #4E94AB;
-       width: 70%;
-       margin-left: -70;
-       transition: all 0.5s;
-     }
-     .menu ul {
-       flex-direction: column;
-     }
-     .menu li{
-       border-top: 1px solid #fff;
-     }
-     #btn-menu:checked ~ .menu {
-       margin: 0;
-     }
- }
- .table {
-   display: flex;
-   display: inline-block;
- }
- .secondBck{
+  }
+  .menu{
+    position: absolute;
+    background: #4E94AB;
+    width: 70%;
+    margin-left: -70;
+    transition: all 0.5s;
+  }
+  .menu ul{
+    flex-direction: column;
+  }
+  .menu li{
+    border-top: 1px solid #fff;
+  }
+  #btn-menu:checked ~ .menu{
+    margin: 0;
+  }
+}
+.table{
+  display: flex;
+  display: inline-block;
+}
+.secondBck{
   background-image:url(./Images/Volleyball.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -144,7 +138,7 @@ body{
   background-repeat: no-repeat;
   overflow: hidden;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }

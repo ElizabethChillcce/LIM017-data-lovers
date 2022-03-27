@@ -7,44 +7,32 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-   
     <div id="homePage">
-
-    <header class="sec uno">
-     
-      <div class="sesgouno"></div>
-        
-    </header>
-    <section class="sec dos">
-       <div class="logo">
-          <img src="./images/mascotas-rio-2016.png" alt="">
-        </div>
-
-
-         <div class="texto">
-            <h1>HOLA</h1>
-            <p>hola</p>
-         </div>
-       
-      
-      <button id="buttonOlympics">Descùbrelo</button>
-    </section>
-    <section class="sec tres">
-        <div class="sesgodos">
-        </div>
-    </section>
+      <header class="sec uno">
+        <div class="sesgouno"></div>
+      </header>
+      <section class="sec dos">
+          <div class="logo">
+            <img src="./Images/mascotas-rio-2016.png" alt="">
+          </div>
+          <div class="texto">
+              <h1></h1>
+          
+          </div>
+          <button id="buttonOlympics">Descùbrelo</button>
+      </section>
+      <section class="sec tres">
+          <div class="sesgodos">
+          </div>
+      </section>
     </div>
     <section id="answer" style="display: none;" class="secondPage secondBck">
-
       <div id="champions">
       </div>
-
-      
+    <!-- termina la primera pag-->
      <header type="checkbox" id="btn-menu" class="secondHeader">
        <label for="btn-menu"><img src="./Images/icono-menu.png" alt="">
-
        </label>
          <nav class="menu">
            <ul>
@@ -53,8 +41,7 @@
              <li><a href="">cantidad de mujeres atletas</a></li>
            </ul>
          </nav>
-        </header>
-       
+      </header>
         <select id="selectSport">
           <option value="Archery">Archery</option>
           <option value="Athletics">Athletics</option>
@@ -66,19 +53,21 @@
           <option value="Cycling">Cycling</option>
           <option value="Diving">Diving</option>
           <option value="Equestrianism">Equestrianism</option>
+          <option value="Fencing">Fencing</option>
+          <option value="Football">Football</option>
+          <option value="Golf">Golf</option>
+          <option value="Gymnastics">Gymnastics</option>
           <option value="Handball">Handball</option>
           <option value="Hockey">Hockey</option>
-          <option value="Gymnastics">Gymnastics</option>
           <option value="Judo">Judo</option>
-          <option value="Fencing">Fencing</option>
           <option value="Modern Pentathlon">Modern Pentathlon</option>
           <option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
           <option value="Rowing">Rowing</option>
           <option value="Rugby Sevens">Rugby Sevens</option>
           <option value="Sailing">Sailing</option>
           <option value="Shooting">Shooting</option>
-          <option value="Synchronized Swimming">Synchronized Swimming</option>
           <option value="Swimming">Swimming</option>
+          <option value="Synchronized Swimming">Synchronized Swimming</option>
           <option value="Table Tennis">Table Tennis</option>
           <option value="Taekwondo">Taekwondo</option>
           <option value="Tennis">Tennis</option>
@@ -86,31 +75,32 @@
           <option value="Triathlon">Triathlon</option>
           <option value="Volleyball">Volleyball</option>
           <option value="Water Polo">Water Polo</option>
-          <option value="Wrestling">Wrestling</option>
           <option value="Weightlifting">Weightlifting</option>
+          <option value="Wrestling">Wrestling</option>
         </select>
-        
-    
-     <div>
-       <table id="athletesBySport">
+     <div >
+       <table id="athletesBySport" class="fondTable">
          <thead>
            <tr class ="table">
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <th>Nombre</th>
+             <th>Pais</th>
+             <th>Edad</th>
+             <th>Medalla</th>
            </tr>
          </thead>
-         <tbody id="Datos"></tbody>
-       </table>      
+         <tbody id="Datos" ></tbody>
+       </table>
      </div>
-
     </section>
-    
-
     <script src="main.js" type="module"></script>
-
   </body>
 </html>
 
-  
+
+
+
+
+
+
+
+

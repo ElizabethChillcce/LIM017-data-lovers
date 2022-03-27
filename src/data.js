@@ -1,5 +1,3 @@
-// estas funciones son de ejemplo
-
 export function filterData(data, sport) {
   // console.log(data.filter(arrayPlay));
  return data.filter((ath) => {

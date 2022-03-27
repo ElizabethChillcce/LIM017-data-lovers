@@ -4,7 +4,7 @@ import data from './data/athletes/athletes.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 // console.log(filterData(data.athletes, "condition"));
-//const arrayPlay= filterData(data.athletes); esto es muy importante
+//const arrayPlay= filterData(data.athletes);
 
 function mostrarPagina() {
     document.getElementById("homePage").style.display="none";
@@ -25,10 +25,6 @@ selectSport.addEventListener('change', (e) => {
   let htmlrow ="";
   for (let i=0; i<resultSport.length; i++){
  htmlrow +=`
- <th>Nombre</th>
-  <th>Pais</th>
-  <th>Edad</th>
-  <th>Medalla</th>
   <tr>
     <td>${resultSport[i].name}</td>
     <td>${resultSport[i].team}</td>
@@ -42,10 +38,23 @@ selectSport.addEventListener('change', (e) => {
 Datos.innerHTML = htmlrow;
 })
 
-let teamWord = document.getElementById('teamWord');
+let teamWord = document.getElementById('teamWord'); 
 teamWord.addEventListener('click', ()=> {
-  console.log(sortData(data.athletes));
+  let dataOrdenada=sortData(data.athletes); //asignando una variable p poder aplicar metodo map
+  let dataTeam=dataOrdenada.map(e=>e.team); //metodo map para solo usar una propiedad team
+  //console.log(dataTeam);
+//eliminando elementos repetidos del array data.team
+  let resultTeam = dataTeam.reduce((acc,item)=>{
+    if(!acc.includes(item)){
+      acc.push(item);
+    }
+    return acc;
+  },[])
+
+  console.log(resultTeam); 
   })
+
+  
 //otra forma de en vez de usar el for clàsico usar el forEach
 /*resultSport.forEach( sport => {
   htmlrow +=`
