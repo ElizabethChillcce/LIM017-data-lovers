@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import {filterData, sortData} from './data.js';
+import {filterData, sortData, computeStats} from './data.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -54,7 +54,16 @@ teamWord.addEventListener('click', ()=> {
   console.log(resultTeam); 
   })
 
+  let genderCalculation = document.getElementById('genderCalculation');
+  genderCalculation.addEventListener('click', ()=> {
   
+
+  })
+
+
+
+
+
 //otra forma de en vez de usar el for clàsico usar el forEach
 /*resultSport.forEach( sport => {
   htmlrow +=`
@@ -94,11 +103,15 @@ Datos.innerHTML = htmlrow;
  // }
 //console.log(filterData(data.athletes));
 
-//tabla
 
 
+// asignando una variable para data.athletes p asi poder separar los valores masculinos y femeninos
+let athleteGender = data.athletes;
 
+let numAtletasMasculinos=computeStats(athleteGender,'M');
+let numAtletasFeminos = computeStats(athleteGender,'F');
 
+console.log('male', numAtletasMasculinos, 'female',numAtletasFeminos);
 
 
 

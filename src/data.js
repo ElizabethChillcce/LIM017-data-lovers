@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export function filterData(data, sport) {
   // console.log(data.filter(arrayPlay));
  return data.filter((ath) => {
@@ -5,15 +6,9 @@ export function filterData(data, sport) {
       return true;
     }
     return false;
-  });
- 
-  
+  }); 
 }
 
-//const sorData = function () {} 
-//export const sortData = (data, sortOrder ) => {
-//  const ordenado =
-//  data.sort((a, b)=> {
 export function sortData(data) {
    data.sort((a, b)=> {
    if (a.team > b.team) {
@@ -33,6 +28,14 @@ else{
  return data;
 }
 
+export function computeStats(dataAtletas, generoMF) {
+ let arrGender= dataAtletas.filter(athlete=>athlete.gender == generoMF);
+ let porcentaje = (arrGender.length*100)/dataAtletas.length;
+ //return arrGender.length;   // este return sirve p ver cuantos atletas participan M y F sin porcentajes
+return porcentaje;   //este return nos permite ver el porcentaje de F y M
+}
+// eslint-disable-next-line no-console
+
 
 // if (ath.age>= 20 && ath.age <29)
 
@@ -48,3 +51,5 @@ else{
 //export const sortData = () => {
   //return 'OMG';
 //};
+
+//  const ordenado =
