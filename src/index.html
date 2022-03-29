@@ -38,7 +38,7 @@
            <ul>
              <li><a href="">Atletas por deportes</a></li>
              <li id="teamWord"><a href="#">Paises medallistas</a></li>
-             <li id="genderCalculation"><a href="#">cantidad de mujeres atletas</a></li>
+             <li><a href="">cantidad de mujeres atletas</a></li>
            </ul>
          </nav>
       </header>
@@ -78,10 +78,17 @@
           <option value="Weightlifting">Weightlifting</option>
           <option value="Wrestling">Wrestling</option>
         </select>
-     <div >
-       <table id="athletesBySport" class="fondTable">
+
+        <select>
+          <option selected>Paises Medallistas</option>
+          <option value="">Ordenados de la A-Z</option>
+          <option value="">Ordenados de la Z-A</option> 
+        </select>
+     
+       <div id="athletesBySport" class="fondTable">
+       <table >
          <thead>
-           <tr class ="table">
+           <tr>
              <th>Nombre</th>
              <th>Pais</th>
              <th>Edad</th>
@@ -90,7 +97,7 @@
          </thead>
          <tbody id="Datos" ></tbody>
        </table>
-     </div>
+     </div> 
     </section>
     <script src="main.js" type="module"></script>
   </body>

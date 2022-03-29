@@ -38,7 +38,7 @@ selectSport.addEventListener('change', (e) => {
 Datos.innerHTML = htmlrow;
 })
 
-let teamWord = document.getElementById('teamWord'); 
+ let teamWord = document.getElementById('teamWord'); 
 teamWord.addEventListener('click', ()=> {
   let dataOrdenada=sortData(data.athletes); //asignando una variable p poder aplicar metodo map
   let dataTeam=dataOrdenada.map(e=>e.team); //metodo map para solo usar una propiedad team
@@ -52,15 +52,24 @@ teamWord.addEventListener('click', ()=> {
   },[])
 
   console.log(resultTeam); 
-  })
+  }) 
 
-  let genderCalculation = document.getElementById('genderCalculation');
+
+
+
+  //todavia no se usa esta variable
+ /*  let genderCalculation = document.getElementById('genderCalculation');
   genderCalculation.addEventListener('click', ()=> {
   
 
-  })
+  }) */
 
+  let athleteGender = data.athletes;
 
+  let numAtletasMasculinos=computeStats(athleteGender,'M');
+  let numAtletasFemeninos = computeStats(athleteGender,'F');
+  
+  console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
 
 
 
@@ -102,16 +111,7 @@ Datos.innerHTML = htmlrow;
  //    champions.appendChild(newDiv);
  // }
 //console.log(filterData(data.athletes));
-
-
-
 // asignando una variable para data.athletes p asi poder separar los valores masculinos y femeninos
-let athleteGender = data.athletes;
-
-let numAtletasMasculinos=computeStats(athleteGender,'M');
-let numAtletasFeminos = computeStats(athleteGender,'F');
-
-console.log('male', numAtletasMasculinos, 'female',numAtletasFeminos);
 
 
 

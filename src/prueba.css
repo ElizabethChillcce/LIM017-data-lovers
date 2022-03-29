@@ -1,0 +1,16 @@
+table{
+    background-color: rgb(58, 252, 58);
+    text-align: left;
+    border-collapse: collapse;
+    width:100%;
+  }
+  
+  th,td{
+    border: solid 1px black;
+    padding: 10px;
+  }
+  thead{
+    background-color:rgb(236, 138, 10);
+    border-bottom: solid 5px #0F362D;
+    color: white;
+  }

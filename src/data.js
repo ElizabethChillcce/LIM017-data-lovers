@@ -19,13 +19,13 @@ export function sortData(data) {
   }
   return 0;
 });
-/*if(sortOrder==="A-Z"){
+/* if(sortOrder==="A-Z"){
   return data;
 }
-else{
+else if(sortOrder==="Z-A){
   return data.reverse();
- }*/
- return data;
+ } */
+ return data;     //esto es importante si comentamos el if y descomentamos este retur nos da solo los paises a-z
 }
 
 export function computeStats(dataAtletas, generoMF) {

@@ -126,11 +126,7 @@ h1{
     margin: 0;
   }
 }
-.table{
-  display: flex;
-  display: inline-block;
-}
-.secondBck{
+ .secondBck{
   background-image:url(./Images/Volleyball.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -141,8 +137,54 @@ h1{
   height: 100%;
   width: 100%;
   object-fit: cover;
+} 
+/* Aqui esta nuestro estilo p la tabla */
+#athletesBySport{
+  background-color: rgb(58, 252, 58);
+  font-family: Arial;
 }
 .fondTable{
-  position: center;
-  margin: 0 auto;
+  margin: 150px auto;
+  width: 600px;
+} 
+table{
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
 }
+th, td{
+  padding: 5px;
+}
+thead {
+  background-color: rgb(95, 250, 48);
+  border-bottom: solid 5px #218b38;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+tr:hover td{
+  background-color: #369681;
+  color: white;
+}
+
+
+
+/* table{
+  background-color: rgb(58, 252, 58);
+  text-align: left;
+  border-collapse: collapse;
+  width:100%;
+}
+
+th,td{
+  border: solid 1px black;
+  padding: 10px;
+}
+thead{
+  background-color:rgb(236, 138, 10);
+  border-bottom: solid 5px #0F362D;
+  color: white;
+}
+ */
