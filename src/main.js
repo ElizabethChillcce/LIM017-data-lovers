@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import {filterData, sortData, computeStats} from './data.js';
+import {filterData, sortData, computeStats, filterByMedal} from './data.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -38,7 +38,8 @@ selectSport.addEventListener('change', (e) => {
 Datos.innerHTML = htmlrow;
 })
 
- let teamWord = document.getElementById('teamWord'); 
+// team ordenados pero estan menu hambuerguesa
+/*  let teamWord = document.getElementById('teamWord'); 
 teamWord.addEventListener('click', ()=> {
   let dataOrdenada=sortData(data.athletes); //asignando una variable p poder aplicar metodo map
   let dataTeam=dataOrdenada.map(e=>e.team); //metodo map para solo usar una propiedad team
@@ -52,7 +53,34 @@ teamWord.addEventListener('click', ()=> {
   },[])
 
   console.log(resultTeam); 
-  }) 
+  })   */
+
+
+//sofi en el selector
+ const selectTeam = document.getElementById("selectTeam");
+ const dataTeam = document.getElementById("Datos");
+selectTeam.addEventListener("change", (event)=>{
+  dataTeam.innerHTML= '';
+  //console.log(selectTeam.options,selectTeam.selectedIndex)
+  // const option = selectTeam.options[selectTeam.selectedIndex].value;
+ // console.log(option)
+ const onlySilver =filterByMedal(data.athletes, 'Silver')
+ //console.log(event.target.value)
+  const sortedData = sortData(onlySilver, event.target.value)
+  sortedData.forEach(ath=>{
+  const row = `<tr>
+   <td>${ath.name}</td>
+   <td>${ath.team}</td>
+   <td>${ath.age}</td>
+   <td>${ath.medal}</td>
+ </tr>
+   `
+   dataTeam.innerHTML += row;
+  })
+ //console.log(sortData(data.athletes, event.target.value))
+}) 
+
+
 
 
 

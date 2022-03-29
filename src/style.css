@@ -137,6 +137,7 @@ h1{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  min-height: 100vh;
 } 
 /* Aqui esta nuestro estilo p la tabla */
 #athletesBySport{

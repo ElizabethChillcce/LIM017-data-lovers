@@ -9,8 +9,19 @@ export function filterData(data, sport) {
   }); 
 }
 
-export function sortData(data) {
-   data.sort((a, b)=> {
+export const filterByMedal = (data, medal) => {
+  let filteredData = [];
+  data.forEach((ath) => {
+    if (ath.medal === medal) {
+      filteredData.push(ath)
+    }
+  })
+  return filteredData;
+}
+
+export function sortData(data, sortOrder) {
+
+ data.sort((a, b)=> {
    if (a.team > b.team) {
     return 1;
   }
@@ -19,13 +30,12 @@ export function sortData(data) {
   }
   return 0;
 });
-/* if(sortOrder==="A-Z"){
+if(sortOrder=== "ascendente"){
   return data;
 }
-else if(sortOrder==="Z-A){
+else if(sortOrder==="descendente"){
   return data.reverse();
- } */
- return data;     //esto es importante si comentamos el if y descomentamos este retur nos da solo los paises a-z
+ }      //esto es importante si comentamos el if y descomentamos este retur nos da solo los paises a-z
 }
 
 export function computeStats(dataAtletas, generoMF) {
