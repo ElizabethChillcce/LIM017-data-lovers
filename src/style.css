@@ -48,86 +48,43 @@ body{
 }
 .logo{
   height: 80px;
-  padding: 10;
-  margin: 10;
+  padding: 5px;
+  margin: 10px;
 }
-.texto{
-  text-align: center;
-  color: #000;
-  margin: 150px 0;
+.Brasil2016{
+ margin-left: 55%;
 }
 h1{
-  font-size: 80px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  color: rgb(201, 79, 8);
+  font-style: italic;
 }
-.texto p{
-  font-size: 40px;
-  font-weight: 300;
-}
-/*segunda pagina*/
-.secondPage{
-  margin: 0;
-  font-family: sans-serif;
-  min-width: 100%;
-}
-.secondHeader{
-  width: 100%;
-  background: #4E94AB;
-}
-/*btn-menu{
-  display: none;
-}*/
-.secondHeader label{
-  display: none;
-  width: 30px;
-  border-right: 1px solid #fff;
-  height: 30px;
+#buttonOlympics{
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
   padding: 10px;
-}
-.secondHeader label:hover{
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.3);
-}
-.menu ul{
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-.menu li{
-  border-right: 1px solidv#fff;
-}
-.menu li:hover{
-  background:  rgba(0, 0, 0, 0.3);
-}
-.menu li a{
-  display: block;
-  padding: 15px 20px;
-  color: #fff;
-  text-decoration: none;
-}
-@media (max-width:768px){
-  .secondHeader label{
-    display: block;
-  }
-  .menu{
-    position: absolute;
-    background: #4E94AB;
-    width: 70%;
-    margin-left: -70;
-    transition: all 0.5s;
-  }
-  .menu ul{
-    flex-direction: column;
-  }
-  .menu li{
-    border-top: 1px solid #fff;
-  }
-  #btn-menu:checked ~ .menu{
-    margin: 0;
-  }
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+ margin-left: 40%;
+} 
+
+/* Imagen encabezado de la segunda pàgina */
+.fondoSecond{
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  min-height: 100px;
+  width: 100%;
+  color: white;
 }
  .secondBck{
-  background-image:url(./Images/Volleyball.jpg);
+  background-image:url(./Images/celebrando.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -170,22 +127,22 @@ tr:hover td{
   color: white;
 }
 
-
-
-/* table{
-  background-color: rgb(58, 252, 58);
-  text-align: left;
-  border-collapse: collapse;
-  width:100%;
+/* Estilo p la donut grafica*/
+#donutchart {
+  width: 900px;
+  height: 500px;
 }
-
-th,td{
-  border: solid 1px black;
+select {
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
 }
-thead{
-  background-color:rgb(236, 138, 10);
-  border-bottom: solid 5px #0F362D;
-  color: white;
+.MaleFemale {
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold 
 }
- */

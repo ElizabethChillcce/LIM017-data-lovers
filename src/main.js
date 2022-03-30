@@ -38,25 +38,7 @@ selectSport.addEventListener('change', (e) => {
 Datos.innerHTML = htmlrow;
 })
 
-// team ordenados pero estan menu hambuerguesa
-/*  let teamWord = document.getElementById('teamWord'); 
-teamWord.addEventListener('click', ()=> {
-  let dataOrdenada=sortData(data.athletes); //asignando una variable p poder aplicar metodo map
-  let dataTeam=dataOrdenada.map(e=>e.team); //metodo map para solo usar una propiedad team
-  //console.log(dataTeam);
-//eliminando elementos repetidos del array data.team
-  let resultTeam = dataTeam.reduce((acc,item)=>{
-    if(!acc.includes(item)){
-      acc.push(item);
-    }
-    return acc;
-  },[])
-
-  console.log(resultTeam); 
-  })   */
-
-
-//sofi en el selector
+//Aqui hay variables de 2 funciones filter por medalla y sort p q ordene A-Z y Z-A los equipos
  const selectTeam = document.getElementById("selectTeam");
  const dataTeam = document.getElementById("Datos");
 selectTeam.addEventListener("change", (event)=>{
@@ -81,66 +63,49 @@ selectTeam.addEventListener("change", (event)=>{
 }) 
 
 
-
-
-
-
-  //todavia no se usa esta variable
- /*  let genderCalculation = document.getElementById('genderCalculation');
+  //variable p los porcentajes de hombres y mujeres
+  let genderCalculation = document.getElementById('genderCalculation');
   genderCalculation.addEventListener('click', ()=> {
-  
 
-  }) */
+    let athleteGender = data.athletes;
 
-  let athleteGender = data.athletes;
+    let numAtletasMasculinos=computeStats(athleteGender,'M');
+    let numAtletasFemeninos = computeStats(athleteGender,'F');
+    console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
+ 
+  }) // Este parentesis y corchete es importante p el addEventListener de aqui arriba
+
+    //calculo correcto
+  /* let athleteGender = data.athletes;
 
   let numAtletasMasculinos=computeStats(athleteGender,'M');
   let numAtletasFemeninos = computeStats(athleteGender,'F');
-  
   console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
 
+})  */
 
 
-//otra forma de en vez de usar el for clàsico usar el forEach
-/*resultSport.forEach( sport => {
-  htmlrow +=`
-  <th>Nombre</th>
-   <th>Pais</th>
-   <th>Edad</th>
-   <th>Medalla</th>
-  <tr>
-  <td>${sport.name}</td>
-  <td>${sport.team}</td>
-  <td>${sport.age}</td>
-  <td>${sport.medal}</td>
-  </tr>
- `;
-});
-Datos.innerHTML = htmlrow;
-})*/
-
-//let tableSport = (mostrar) => {
-/* Datos.innerHTML = ``;
- mostrar.forEach ((z)=> {
-   Datos.innerHTML += resultSport(z);
-  return(resultSport);
- });
- }
- tableSport(resultSport)
-
-//return (resultSport);*/
-
- //const arrayPlay = filterData(data.athletes);
-//for (let i=0; i<arrayPlay.length; i++) {
-    
- //let newDiv = document.createElement("div");
- // let newContent = document.createTextNode(arrayPlay[i].name);
- //   newDiv.appendChild(newContent);
- //    champions.appendChild(newDiv);
- // }
-//console.log(filterData(data.athletes));
-// asignando una variable para data.athletes p asi poder separar los valores masculinos y femeninos
 
 
+
+ google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart); 
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work',     11],
+    ['Eat',      2],
+    ['Commute',  2],
+    ['Watch TV', 2],
+    ['Sleep',    7]
+  ]);
+var options = {
+    title: 'My Daily Activities',
+    pieHole: 0.4,
+  };
+
+var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+  chart.draw(data, options);
+}
 
 

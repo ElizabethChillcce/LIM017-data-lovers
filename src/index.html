@@ -16,11 +16,15 @@
           <div class="logo">
             <img src="./Images/mascotas-rio-2016.png" alt="">
           </div>
-          <div class="texto">
-              <h1></h1>
-          
+
+          <div>
+            <img src="./Images/Brasil.png" alt="" class="Brasil2016">
           </div>
+
+          <h1>LO QUE DEBERIAS SABER DE ESTAS OLIMPIADAS</h1>
+
           <button id="buttonOlympics">Descùbrelo</button>
+          
       </section>
       <section class="sec tres">
           <div class="sesgodos">
@@ -31,18 +35,14 @@
       <div id="champions">
       </div>
     <!-- termina la primera pag-->
-     <header type="checkbox" id="btn-menu" class="secondHeader">
-       <label for="btn-menu"><img src="./Images/icono-menu.png" alt="">
-       </label>
-         <nav class="menu">
-           <ul>
-             <li><a href="">Atletas por deportes</a></li>
-             <li id="teamWord"><a href="#">Paises medallistas</a></li>
-             <li><a href="">cantidad de mujeres atletas</a></li>
-           </ul>
-         </nav>
-      </header>
+     <header>
+       <picture>
+        <img src="./Images/olasOlimpicas.png" alt="" class="fondoSecond">
+       </picture>
+     </header>
+
         <select id="selectSport">
+          <option selected>Atletas por deporte</option>
           <option value="Archery">Archery</option>
           <option value="Athletics">Athletics</option>
           <option value="Badminton">Badminton</option>
@@ -82,23 +82,40 @@
         <select id="selectTeam">
           <option selected>Paises Medallistas</option>
           <option value="ascendente">Ordenados de la A-Z</option>
-          <option value="descendente">Ordenados de la Z-A</option> 
+          <option value="descendente">Ordenados de la Z-A</option>
         </select>
      
+      <!--  <select id="genderCalculation">
+          <option value="generoMF">Porcentaje Medallistas por Gènero</option>
+        </select>  -->
+      
+        <button id="genderCalculation" class="MaleFemale">Porcentaje Medallistas por Gènero</button>
+
        <div id="athletesBySport" class="fondTable">
        <table >
          <thead>
            <tr>
-             <th>Nombre</th>
-             <th>Pais</th>
-             <th>Edad</th>
-             <th>Medalla</th>
+             <th>NOMBRE</th>
+             <th>PAIS</th>
+             <th>EDAD</th>
+             <th>MEDALLA</th>
            </tr>
          </thead>
          <tbody id="Datos" ></tbody>
        </table>
      </div> 
     </section>
+
+    <section id="thirdPage">
+
+      <header>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      </header>
+
+      <div id="donutchart"></div>
+
+    </section>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
