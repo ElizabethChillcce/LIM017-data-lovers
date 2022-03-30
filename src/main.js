@@ -8,7 +8,7 @@ import data from './data/athletes/athletes.js';
 
 function mostrarPagina() {
     document.getElementById("homePage").style.display="none";
-    document.getElementById("answer").style.display="block";
+    document.getElementById("secondPage").style.display="block";
 }
 
 let buttonUno= document.getElementById("buttonOlympics");
@@ -63,44 +63,35 @@ selectTeam.addEventListener("change", (event)=>{
 }) 
 
 
-  //variable p los porcentajes de hombres y mujeres
-  let genderCalculation = document.getElementById('genderCalculation');
-  genderCalculation.addEventListener('click', ()=> {
-
+  //Tercera historia de usuario calculo de gènero
     let athleteGender = data.athletes;
 
     let numAtletasMasculinos=computeStats(athleteGender,'M');
     let numAtletasFemeninos = computeStats(athleteGender,'F');
     console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
- 
-  }) // Este parentesis y corchete es importante p el addEventListener de aqui arriba
+  
 
-    //calculo correcto
-  /* let athleteGender = data.athletes;
-
-  let numAtletasMasculinos=computeStats(athleteGender,'M');
-  let numAtletasFemeninos = computeStats(athleteGender,'F');
-  console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
-
-})  */
+function showPage(){
+  document.getElementById("secondPage").style.display="none";
+  document.getElementById("threePage").style.display="block";
+}
+let buttonGenderCalculation= document.getElementById("genderCalculation");
+buttonGenderCalculation.addEventListener("click",showPage);
 
 
 
 
-
- google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart); 
+google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart); 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Task', 'Hours per Day'],
-    ['Work',     11],
-    ['Eat',      2],
-    ['Commute',  2],
-    ['Watch TV', 2],
-    ['Sleep',    7]
+    ['data.athletes', 'athleteGender'],
+    ['male',     52],
+    ['female',   48]
+    
   ]);
 var options = {
-    title: 'My Daily Activities',
+    title: 'Porcentaje de hombres y mujeres medallistas',
     pieHole: 0.4,
   };
 
@@ -109,3 +100,8 @@ var chart = new google.visualization.PieChart(document.getElementById('donutchar
 }
 
 
+let toReturn = document.getElementById('toReturn')
+toReturn.addEventListener('click',()=>{
+  document.getElementById("threePage").style.display="none";
+  document.getElementById("homePage").style.display="block";
+});

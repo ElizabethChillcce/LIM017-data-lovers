@@ -128,8 +128,9 @@ tr:hover td{
 }
 
 /* Estilo p la donut grafica*/
-#donutchart {
-  width: 900px;
+.chart {
+  margin: 170px;
+  width: 1000px;
   height: 500px;
 }
 select {
@@ -144,5 +145,5 @@ select {
   flex-direction: row;
   padding: 10px;
   border-radius: 10px;
-  font-weight: bold 
+  font-weight: bold;
 }
