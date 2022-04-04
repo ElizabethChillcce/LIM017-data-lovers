@@ -83,8 +83,11 @@ h1{
   width: 100%;
   color: white;
 }
+#secondPage{
+  display: none;
+}
  .secondBck{
-  background-image:url(./Images/celebrando.jpg);
+  background-image:url(./Images/Nadadora2.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -127,12 +130,6 @@ tr:hover td{
   color: white;
 }
 
-/* Estilo p la donut grafica*/
-.chart {
-  margin: 170px;
-  width: 1000px;
-  height: 500px;
-}
 select {
   flex-direction: row;
   margin-left: 10%;
@@ -147,3 +144,50 @@ select {
   border-radius: 10px;
   font-weight: bold;
 }
+#threePage{
+  display: none;
+}
+.imagThreePage{
+background-image:url(./Images/fondoUltimo.png);
+background-repeat:no-repeat;
+/* background-attachment: fixed; */
+background-size: cover;
+/* background-position: center center; */
+min-height: 100vh;
+}
+/* Estilo p la donut grafica*/
+ #donutchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 600px;
+  margin-left: 20%;
+} 
+/* .chart {
+  width: 800px;
+  height: 500px; 
+  color: purple;
+}   */
+ .buttonReturn {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: red;
+  margin-left: 48%;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  width: 12;
+} 
+
+/*  .chart {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+}  */

@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-console */
-import {filterData, sortData, computeStats, filterByMedal} from './data.js';
+import {filterData, filterByMedal, sortData, computeStats} from './data.js';
 import data from './data/athletes/athletes.js';
 // import data from './data/lol/lol.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -11,8 +12,8 @@ function mostrarPagina() {
     document.getElementById("secondPage").style.display="block";
 }
 
-let buttonUno= document.getElementById("buttonOlympics");
- buttonUno.addEventListener("click",mostrarPagina);
+let buttonOlympics= document.getElementById("buttonOlympics");
+buttonOlympics.addEventListener("click",mostrarPagina);
 
 const Datos = document.getElementById("Datos")
 
@@ -66,8 +67,8 @@ selectTeam.addEventListener("change", (event)=>{
   //Tercera historia de usuario calculo de gènero
     let athleteGender = data.athletes;
 
-    let numAtletasMasculinos=computeStats(athleteGender,'M');
-    let numAtletasFemeninos = computeStats(athleteGender,'F');
+    let numAtletasMasculinos=parseInt(computeStats(athleteGender,'M'));
+    let numAtletasFemeninos = parseInt(computeStats(athleteGender,'F'));
     console.log('male', numAtletasMasculinos, 'female',numAtletasFemeninos);
   
 
@@ -86,13 +87,19 @@ google.charts.load("current", {packages:["corechart"]});
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['data.athletes', 'athleteGender'],
-    ['male',     52],
-    ['female',   48]
+    ['Male',    numAtletasMasculinos],
+    ['Female',   numAtletasFemeninos]
     
   ]);
 var options = {
-    title: 'Porcentaje de hombres y mujeres medallistas',
+    title: 'PORCENTAJE DE HOMBRES Y MUJERES MEDALLISTAS',
     pieHole: 0.4,
+    fontSize: 12,
+    backgroundColor: {fill: "#fdfa55"},
+    legend: {textStyle: {color: "red", fontSize:14, fontWeight: "bold"} },
+    tooltip: {textStyle: {color: "red"}, showColorCode: true },
+    colors: ["#0000ff", "#c00ea8"]
+    
   };
 
 var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
