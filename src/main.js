@@ -94,12 +94,13 @@ function drawChart() {
 var options = {
     title: 'PORCENTAJE DE HOMBRES Y MUJERES MEDALLISTAS',
     pieHole: 0.4,
+    width: '100%',
+    height: '500px',
     fontSize: 12,
     backgroundColor: {fill: "#fdfa55"},
     legend: {textStyle: {color: "red", fontSize:14, fontWeight: "bold"} },
     tooltip: {textStyle: {color: "red"}, showColorCode: true },
     colors: ["#0000ff", "#c00ea8"]
-    
   };
 
 var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
