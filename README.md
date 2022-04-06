@@ -7,11 +7,19 @@ Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi co
 
 ## Boceto
 
+<<<<<<< HEAD
 ![Prototipo](https://github.com/ElizabethChillcce/LIM017-data-lovers/commit/5be952136feb97005bbbe7ac8982a0cf55c8947f)
 
 ## Prototipo
 
 ![Prototipo](https://github.com/ElizabethChillcce/LIM017-card-validation/blob/main/prototipo.jpg)
+=======
+## Boceto
+![image](https://user-images.githubusercontent.com/98766651/161877633-9569083d-1d92-49cd-ac8c-c6159af5d5db.png)
+
+## Prototipo
+
+>>>>>>> 06ded584b3856c469379d24c48f0abb98de36ca4
 
 
 
