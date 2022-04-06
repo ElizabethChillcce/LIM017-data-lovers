@@ -6,13 +6,13 @@ En estilos recopilamos imagenes relacionadas para que sea una interfaz amigable 
 Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi como tambien a profesores o profesoras a aprender y enseñar sobre estos hermosos juegos olímpicos de Rio de Janeiro 2016
 
 ## Boceto
-
+![image](https://user-images.githubusercontent.com/98766651/161889565-cbf34ff1-86a8-42e9-a6f9-36e9743dec9e.png)
 
 ## Prototipo
 
 ![Prototipo]()
 
-![image](https://user-images.githubusercontent.com/98766651/161889565-cbf34ff1-86a8-42e9-a6f9-36e9743dec9e.png)
+
 
 
 ## Prototipo
