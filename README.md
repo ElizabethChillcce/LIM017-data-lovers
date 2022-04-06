@@ -3,11 +3,12 @@
 Para iniciar con este proyecto, primero hicimos una encuesta para asì iniciar nuestra primera historia de usuario, donde nuestro usuario seleccionando el deporte de su preferencia podrìan saber el nombre de los atletas que participaròn  en este juego olìmpico, ademàs saber su edad, a que equipo representan y su medalla. Para la segunda historia de usuario ordenamos los paises de la "A-Z" y de la "Z-A" para que nuestro usuario pueda visualizar que paises participaròn y como esta ordenado ellos podrìan escoger cual de esas dos opciones les permitirìa ver el pais de desean, como tambièn el nombre de los atletas que participaròn, su edad y su medalla. En la tercera historia de usuario nuestros usuarios pueden visualizar el porcentaje de hombres y mujeres medallistas atravèz de una gràfica de Google Chart. Recopilamos imàgenes que se relacionaràn en los colores, para que asì en el interfaz no se vea cambios bruscos. 
 Este proyecto ayudarà a aficionados del deporte, estudiantes, deportistas como a profesores de deportes a aprender màs sobre estos hermosos juegos olímpicos de Rio de Janeiro.
 
+## Boceto
 ![image](https://user-images.githubusercontent.com/98766651/161877633-9569083d-1d92-49cd-ac8c-c6159af5d5db.png)
 
+## Prototipo
 
 
-![Prototipo]()
 
 
 ## Índice
