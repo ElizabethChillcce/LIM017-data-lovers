@@ -1,7 +1,10 @@
 # JUEGOS OLIMPICOS DE RIO DE JANERIO
 
-Para iniciar con este proyecto, primero hicimos una encuesta para asì iniciar nuestra primera historia de usuario, donde nuestro usuario seleccionando el deporte de su preferencia podrìan saber el nombre de los atletas que participaròn  en este juego olìmpico, ademàs saber su edad, a que equipo representan y su medalla. Para la segunda historia de usuario ordenamos los paises de la "A-Z" y de la "Z-A" para que nuestro usuario pueda visualizar que paises participaròn y como esta ordenado ellos podrìan escoger cual de esas dos opciones les permitirìa ver el pais de desean, como tambièn el nombre de los atletas que participaròn, su edad y su medalla. En la tercera historia de usuario nuestros usuarios pueden visualizar el porcentaje de hombres y mujeres medallistas atravèz de una gràfica de Google Chart. Recopilamos imàgenes que se relacionaràn en los colores, para que asì en el interfaz no se vea cambios bruscos. 
-Este proyecto ayudarà a aficionados del deporte, estudiantes, deportistas como a profesores de deportes a aprender màs sobre estos hermosos juegos olímpicos de Rio de Janeiro.
+Para iniciar con este proyecto, primero hicimos una encuesta para así iniciar nuestra primera historia de usuario, en la cual nuestro usuario podría seleccionar el deporte de su preferencia para que así puedan saber los nombres de los atletas que participaron en estos juegos al igual que su edad a que equipo pertenecen y también la medalla que ganaron. Para la segunda historia de usuario se visualizan los paises en orden alfabetico de forma ascendente y descendente.
+En la tercera historia de usuario se mostraría el nombre de los atletas en porcentaje por diferencia de genero segun las medallas que hayan ganado a travez de una grafica de Google Chart.
+En estilos recopilamos imagenes relacionadas para que sea una interfaz amigable con el usuario y no tengan cambios bruscos a la vista.
+Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi como tambien a profesores o profesoras a aprender y enseñar sobre estos hermosos juegos olímpicos de Rio de Janeiro
+
 ## Boceto
 
 ![Prototipo](https://github.com/ElizabethChillcce/LIM017-data-lovers/commit/5be952136feb97005bbbe7ac8982a0cf55c8947f)
@@ -13,17 +16,7 @@ Este proyecto ayudarà a aficionados del deporte, estudiantes, deportistas como 
 
 
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
 
-***
 
 ## 1. Preámbulo
 
