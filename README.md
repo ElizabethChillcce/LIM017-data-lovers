@@ -12,7 +12,6 @@ Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi co
 
 ## Prototipo
 
-)
 
 
 
