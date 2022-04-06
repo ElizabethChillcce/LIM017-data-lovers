@@ -3,7 +3,7 @@
 Para iniciar con este proyecto, primero hicimos una encuesta para así iniciar nuestra primera historia de usuario, en la cual nuestro usuario podría seleccionar el deporte de su preferencia para que así puedan saber los nombres de los atletas que participaron en estos juegos al igual que su edad a que equipo pertenecen y también la medalla que ganaron. Para la segunda historia de usuario se visualizan los paises en orden alfabetico de forma ascendente y descendente.
 En la tercera historia de usuario se mostraría el nombre de los atletas en porcentaje por diferencia de genero segun las medallas que hayan ganado a travez de una grafica de Google Chart.
 En estilos recopilamos imagenes relacionadas para que sea una interfaz amigable con el usuario y no tengan cambios bruscos a la vista.
-Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi como tambien a profesores o profesoras a aprender y enseñar sobre estos hermosos juegos olímpicos de Rio de Janeiro
+Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi como tambien a profesores o profesoras a aprender y enseñar sobre estos hermosos juegos olímpicos de Rio de Janeiro 2016
 
 ## Boceto
 
