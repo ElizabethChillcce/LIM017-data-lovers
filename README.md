@@ -10,8 +10,8 @@ Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi co
 
 ## Prototipo
 
-![Prototipo](![image](https://user-images.githubusercontent.com/98766651/161892109-60831170-b148-4fb9-bda7-fcdd6fbbe4db.png)
-)
+![image](https://user-images.githubusercontent.com/98766651/161892109-60831170-b148-4fb9-bda7-fcdd6fbbe4db.png)
+
 
 
 
