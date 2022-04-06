@@ -7,6 +7,8 @@ Este proyecto ayudará a aficionados al deporte, estudiantes, deportistas asi co
 
 ## Boceto
 
+![image](https://user-images.githubusercontent.com/98766651/161889565-cbf34ff1-86a8-42e9-a6f9-36e9743dec9e.png)
+
 
 ## Prototipo
 
